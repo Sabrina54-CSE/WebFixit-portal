@@ -61,7 +61,7 @@ $conn->close();
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('pound.jpg') no-repeat center center/cover;
+      background: url('/pound.jpg') no-repeat center center/cover;
       background-size: cover;
       color: #fff;
       height: 100vh;

@@ -13,7 +13,7 @@ session_start();
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('pound.jpg') no-repeat center center/cover;
+      background: url('/pound.jpg') no-repeat center center/cover;
       background-size: cover;
       color: #fff;
       min-height: 100vh;
@@ -68,7 +68,7 @@ session_start();
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fixit Portal</a>
+      <a class="navbar-brand" href="">Fixit Portal</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>

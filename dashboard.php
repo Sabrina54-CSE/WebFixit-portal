@@ -146,7 +146,7 @@ $stmt->close();
     <div class="container-fluid">
       <a class="navbar-brand" href="dashboard.php">Fixit Portal</a>
       <div class="navbar-nav ms-auto d-flex align-items-center">
-        <img src="<?php echo $profile_picture ? htmlspecialchars($profile_picture) :'profile.png'; ?>" alt="User Profile" class="profile-img" />
+        <img src="<?php echo $profile_picture ? htmlspecialchars($profile_picture) :'/profile.png'; ?>" alt="User Profile" class="profile-img" />
         <span class="navbar-text"><strong><?php echo htmlspecialchars($user_name); ?></strong></span>
       </div>
     </div>

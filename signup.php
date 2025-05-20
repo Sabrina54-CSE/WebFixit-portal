@@ -3,12 +3,13 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include("db_connect.php");
 $error = '';
-$success = '';
+$success = ''
 if (!$conn) {
   die("Database connection failed: " . mysqli_connect_error());
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = trim($_POST['name']);
+
   $email = trim($_POST['email']);
   $password = $_POST['password'];
   $confirmPassword = $_POST['confirmPassword'];
@@ -50,7 +51,7 @@ $conn->close();
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('pound.jpg') no-repeat center center/cover;
+      background: url('/pound.jpg') no-repeat center center/cover;
       background-size: cover;
       color: #fff;
       height: 100vh;
