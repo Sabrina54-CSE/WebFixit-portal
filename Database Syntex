@@ -57,6 +57,7 @@
     time VARCHAR(50),
     contact VARCHAR(100)
 );
+8.
 INSERT INTO locations (department, location, direction, time, contact) VALUES
 ('Department of CSE', 'Nexus Building, 2nd Floor', 'Last room at the end', '8:15 AM - 3:00 PM', '01800000000'),
 ('Department of EEE', 'Nexus Building, Floor 4, Room 402', 'Far right end of the corridor', '8:15 AM - 3:00 PM', '01700000000'),
