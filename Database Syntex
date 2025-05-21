@@ -57,3 +57,13 @@
     time VARCHAR(50),
     contact VARCHAR(100)
 );
+INSERT INTO locations (department, location, direction, time, contact) VALUES
+('Department of CSE', 'Nexus Building, 2nd Floor', 'Last room at the end', '8:15 AM - 3:00 PM', '01800000000'),
+('Department of EEE', 'Nexus Building, Floor 4, Room 402', 'Far right end of the corridor', '8:15 AM - 3:00 PM', '01700000000'),
+('Department of ICE', 'Nexus Building, Floor 4, Room 404', 'Next to EEE Department', '8:15 AM - 3:00 PM', '01700000000'),
+('Department of English', 'Panoroma Building, Floor 7, Room 705', 'Opposite Skylight', '8:15 AM - 3:00 PM', '01700000000'),
+('Department of BBA', 'Panoroma Building, Floor 6, Room 603', 'Right middle of the corridor', '8:15 AM - 3:00 PM', '01700000000'),
+('Department of CE', 'Nexus Building, Floor 5, Room 504', 'Near Math Department', '8:15 AM - 3:00 PM', '01800000000'),
+('Administrative Building', 'Academic Building', 'Main entrance, straight', '8:15 AM - 3:00 PM', '01300000000'),
+('Library', 'Panoroma Building, Ground Floor', 'Near the Lift', '8:15 AM - 5:00 PM', '01700000000'),
+('Cafetiere & Stationary', 'Building A, Floor 1, Room 101', 'Near the main entrance, left', '8:00 AM - 10:00 PM', '123-456-7890');
