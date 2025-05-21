@@ -1,0 +1,59 @@
+1. CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20),
+    hall VARCHAR(100),
+    department VARCHAR(100),
+    account_type VARCHAR(50), 
+    student_id VARCHAR(50),
+    profile_picture VARCHAR(255),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+2.CREATE TABLE complaints (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    category VARCHAR(100) NOT NULL,
+    description TEXT NOT NULL,
+    status VARCHAR(50) DEFAULT 'Pending',
+    feedback TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+3. CREATE TABLE votes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    vote_type ENUM('like','dislike') NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+4. CREATE TABLE comments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    comment TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+5. CREATE TABLE chat_messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sender VARCHAR(50) NOT NULL, -- 'user' or 'admin'
+    message TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+6. CREATE TABLE emergency_complaints (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    issue VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    priority VARCHAR(20) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+ 7. CREATE TABLE locations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    department VARCHAR(100) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    direction VARCHAR(255),
+    time VARCHAR(50),
+    contact VARCHAR(100)
+);
